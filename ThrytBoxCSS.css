@@ -1,0 +1,134 @@
+
+ @font-face{ 
+	font-family: 'Days';
+	src: url('./web_fonts/days-regular-macroman/Days-webfont.eot');
+	src: url('Days-webfont.eot?iefix') format('eot'),
+	     url('Days-webfont.woff') format('woff'),
+	     url('Days-webfont.ttf') format('truetype'),
+	     url('Days-webfont.svg#webfont') format('svg');
+}
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background-image: url("images/images.jpg");
+        background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+        color:white;
+}
+#header {
+	background:blue;
+	padding:10px;
+}
+#header ul#misc {
+        top:10px;
+	text-align: right;
+	font-family: Arial, Helvetica, Sans Serif;
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+        color:red;
+       
+}
+#header li, #footer li {
+	display: inline;
+}
+#header ul#misc li a {
+	 background: blue;
+  background-image: -webkit-linear-gradient( blue);
+  background-image: -moz-linear-gradient( blue);
+  background-image: -ms-linear-gradient( blue);
+  background-image: -o-linear-gradient(blue);
+  background-image: linear-gradient( blue);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+        border-radius:3px;
+        margin-right:5px;
+        margin-bottom:5px;
+        }
+#header ul#misc li a:hover, #footer ul li a:hover {
+	 background: white;
+  background-image: -webkit-linear-gradient(white);
+  background-image: -moz-linear-gradient( white);
+  background-image: -ms-linear-gradient( white);
+  background-image: -o-linear-gradient(white);
+  background-image: linear-gradient( white);
+  text-decoration: none;
+  color:blue;
+}
+#header ul#thrtbx {
+	text-align: left;
+	font-family: 'Days', Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 29px;
+}
+#header ul#thrtbx .rainbow {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+#content h1{
+	font-family: 'Days', Verdana, Arial;
+	color: white;
+	font-size: 45px;
+        background-color:blue;
+        margin-right:640px;
+       transperancy:10px;
+        }
+#content h2{
+	font-family: 'Days', Verdana, Arial;
+	color: white;
+	font-size: 45px;
+        background-color:blue;
+        margin-right:55px;
+        }
+#content h3{
+	font-family: 'Days', Verdana, Arial;
+	color: white;
+	font-size: 45px;
+        background-color:blue;
+        margin-right:640px;
+        }
+#content h4{
+	font-family: 'Days', Verdana, Arial;
+	color: white;
+	font-size: 45px;
+        background-color:blue;
+        margin-right:740px;
+        }
+#footer {
+	background:blue;
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#footer ul li a {
+	text-decoration: none;
+	padding: .2em, 1em;
+	color: #fff;
+	font-family: sans-serif, Arial, Verdana;
+	font-size: 18px;
+        margin-right:7px;
+        border-radius:3px;
+}

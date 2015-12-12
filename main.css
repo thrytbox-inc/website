@@ -1,0 +1,91 @@
+/**
+ * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
+ * 
+ * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+ * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
+ *
+ * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
+ */
+ @font-face{ 
+	font-family: 'Days';
+	src: url('./web_fonts/days-regular-macroman/Days-webfont.eot');
+	src: url('Days-webfont.eot?iefix') format('eot'),
+	     url('Days-webfont.woff') format('woff'),
+	     url('Days-webfont.ttf') format('truetype'),
+	     url('Days-webfont.svg#webfont') format('svg');
+}
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background-image: url("./images/fr.jpg");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ededed;
+	padding:10px;
+}
+#header ul#misc {
+	text-align: right;
+	font-family: Arial, sans-serif, Verdana;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#header li, #footer li {
+	display: inline;
+}
+#header ul#misc li a {
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: lightblue;
+}
+#header ul#misc li a:hover, #footer ul li a:hover {
+	color: #fff;
+	background-color: #369;
+}
+#header ul#thrtbx {
+	text-align: left;
+	font-family: 'Days', Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 29px;
+}
+#header ul#thrtbx .rainbow {
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+#content h1,h2,h3 {
+	font-family: 'Days', Verdana, Arial;
+	color: white;
+	font-size: 45px;
+}
+#footer {
+	background:#ffab62;
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#footer ul li a {
+	text-decoration: none;
+	padding: .2em, 1em;
+	color: #fff;
+	font-family: sans-serif, Arial, Verdana;
+	font-size: 2em;
+}
